@@ -1,0 +1,9 @@
+﻿@model BlogMat.Models.Post
+
+@{
+    ViewBag.Title = "Details";
+    bool isAdmin = ViewBag.IsAdmin ?? false;
+}
+
+@PostHelper.Render(Model, Html, isAdmin, true)
+
