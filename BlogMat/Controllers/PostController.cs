@@ -12,7 +12,7 @@ namespace BlogMat.Controllers
     {
         private BlogDbEntities1 blogModel = new BlogDbEntities1();
         private const int PostPerPage = 4;
-        public bool IsAdmin { get { return true;/*Session["IsAdmin"] != null && (bool)Session["IsAdmin"];*/ } }
+        public bool IsAdmin { get { return true; } }//Session["IsAdmin"] != null && (bool)Session["IsAdmin"]; } } 
 
         // GET: Post
         public ActionResult Index(int? id)
